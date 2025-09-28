@@ -1,307 +1,391 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: "Poppins", sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 
-    margin-top:70px ;
-    min-height: 100vh;
+  margin-top: 70px;
+  min-height: 100vh;
 
-    display: flex;
-    flex-flow: column;
-    gap: 10rem;
-    background-color: #000000;
+  display: flex;
+  flex-flow: column;
+  gap: 10rem;
+  background-color: #000000;
 }
-
 
 /* Navabr */
-.navbar-container{
-    width: 1300px;
-    padding: 5px;
-    position: Fixed;
-    z-index: 9999;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.navbar-container {
+  width: 1300px;
+  padding: 5px;
+  position: Fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    color: white;
-    background-color: rgba(65, 65, 65, 0.9);
-    border-radius: 20px;
-    top: 10px;
-    left: 110px;
-    height: 70px;
-    
-}
-
-header.header-container .navbar-container .logo:hover{
-    color: aqua;
+  color: white;
+  background-color: rgba(65, 65, 65, 0.9);
+  border-radius: 20px;
+  top: 10px;
+  left: 110px;
+  height: 70px;
 }
 
-header.header-container .navbar-container .nav-list ul{
-    display: flex;
-    justify-content: space-around;
-    gap: 4rem 2rem;
+header.header-container .navbar-container .logo:hover {
+  color: aqua;
 }
-header.header-container .navbar-container .nav-list ul li{
-    list-style-type:none ;
+
+header.header-container .navbar-container .nav-list ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem 2rem;
 }
-header.header-container .navbar-container .nav-list ul li a{
-    text-decoration: none;
-    color: white;
+header.header-container .navbar-container .nav-list ul li {
+  list-style-type: none;
 }
-header.header-container .navbar-container .nav-list ul li a:hover{
-    color: aqua;
+header.header-container .navbar-container .nav-list ul li a {
+  text-decoration: none;
+  color: white;
+}
+header.header-container .navbar-container .nav-list ul li a:hover {
+  color: aqua;
 }
 
 /* button navbar */
-header.header-container .navbar-container button{
-    border-radius: 10px;
-    border: 2px solid white;
-    /* padding: 0rem 1rem; */
-    background-color: transparent;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    height: 45px;
-    color: white;
+header.header-container .navbar-container button {
+  border-radius: 10px;
+  border: 2px solid white;
+  /* padding: 0rem 1rem; */
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  height: 45px;
+  color: white;
 }
-header.header-container .navbar-container button:hover{
-    background-color: white;
-    color: Black;
+header.header-container .navbar-container button:hover {
+  background-color: white;
+  color: Black;
 }
 
 /* Jumbotron */
-.jumbotron img{
-    width: 100%;
-    max-width: 1920px;
-    max-height: 700px;
+.jumbotron img {
+  width: 100%;
+  max-width: 1920px;
+  max-height: 700px;
 
-    object-fit: cover;
-}
-
-header.header-container .jumbotron .slide{
-    display: flex;
-
-    animation-name: slide;
-    animation-duration: 2.5s;
+  object-fit: cover;
 }
 
-header.header-container .jumbotron .slide section.description-left{
-    position: absolute;
-    color: white;
-    max-width: 800px;
-    padding: 12rem 9rem;
-    display: flex;
-    flex-flow: column;
-    align-items:start;
-}
-header.header-container .jumbotron .slide section.description-left h3{
-    font-size: 2rem;
-    font-weight: 700;
-    color: aqua;
-}
-header.header-container .jumbotron .slide section.description-left p{
-    font-size: 1rem;
-    padding-bottom: 1rem;
+header.header-container .jumbotron .slide {
+  display: flex;
+
+  animation-name: slide;
+  animation-duration: 2.5s;
 }
 
-header.header-container .jumbotron .slide section.description-left button{
-    background-color: transparent;
-    border: solid 1px aqua;
-    border-radius: 999px;
-    padding: 0.5rem 1rem;
-    color: aqua;
-
-    font-size: 1rem;
-    font-family: "Poppins",sans-serif;
+header.header-container .jumbotron .slide section.description-left {
+  position: absolute;
+  color: white;
+  max-width: 800px;
+  padding: 12rem 9rem;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
 }
-header.header-container .jumbotron .slide section.description-left button:hover{
-    background-color: aqua;
-    color: black;
+header.header-container .jumbotron .slide section.description-left h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: aqua;
 }
-
-header.header-container .jumbotron .slide section.description-right{
-    position: absolute;
-    color: white;
-    max-width: 800px;
-    padding: 12rem 9rem;
-    display: flex;
-    flex-direction: column;
-    inset-inline-end: 0;
-    inset-block: 0;
-    align-items: end;
-}
-header.header-container .jumbotron .slide section.description-right h3{
-    font-size: 2rem;
-    font-weight: 700;
-    color: aqua;
-    text-align: end;
-}
-header.header-container .jumbotron .slide section.description-right p{
-    font-size: 1rem;
-    text-align: end;
-}
-header.header-container .jumbotron .slide section.description-right button{
-    background-color: transparent;
-    border: solid 1px aqua;
-    border-radius: 999px;
-    padding: 0.5rem 1rem;
-    color: aqua;
-
-    font-size: 1rem;
-    font-family: "Poppins",sans-serif;
-}
-header.header-container .jumbotron .slide section.description-right button:hover{
-    background-color: aqua;
-    color: black;
+header.header-container .jumbotron .slide section.description-left p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
+header.header-container .jumbotron .slide section.description-left button {
+  background-color: transparent;
+  border: solid 1px aqua;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  color: aqua;
+
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+header.header-container
+  .jumbotron
+  .slide
+  section.description-left
+  button:hover {
+  background-color: aqua;
+  color: black;
+}
+
+header.header-container .jumbotron .slide section.description-right {
+  position: absolute;
+  color: white;
+  max-width: 800px;
+  padding: 12rem 9rem;
+  display: flex;
+  flex-direction: column;
+  inset-inline-end: 0;
+  inset-block: 0;
+  align-items: end;
+}
+header.header-container .jumbotron .slide section.description-right h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: aqua;
+  text-align: end;
+}
+header.header-container .jumbotron .slide section.description-right p {
+  font-size: 1rem;
+  text-align: end;
+}
+header.header-container .jumbotron .slide section.description-right button {
+  background-color: transparent;
+  border: solid 1px aqua;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  color: aqua;
+
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+header.header-container
+  .jumbotron
+  .slide
+  section.description-right
+  button:hover {
+  background-color: aqua;
+  color: black;
+}
 
 @keyframes slide {
-    from {
-        opacity: 0.2;
-    }
-    to{
-        opacity: 1;
-    }
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 
 /* Main */
 
 /* Section 1 : Jenis ikan cupang */
-main{
-    display: flex;
-    padding: 14rem 12rem;
-    background: transparent;
+main {
+  display: flex;
+  padding: 14rem 12rem;
+  background: transparent;
 }
 
-.content{
-    background-color: transparent;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 30rem;
+.content {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 30rem;
 }
 
-.card{
-    display: flex;
-    color: White;
-    padding: 4rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    border-left: 5px solid rgb(0, 4, 255);
-    box-shadow: 0 4px 12px 0 rgba(255, 255, 255, 0.8);
+.card {
+  display: flex;
+  color: White;
+  padding: 4rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border-left: 5px solid rgb(0, 4, 255);
+  box-shadow: 0 4px 12px 0 rgba(255, 255, 255, 0.8);
 }
-.card h2{
-    color: white;
-    font-size: 4rem;
-    writing-mode: vertical-lr;
-    transform: scaleX(-1) scaleY(-1);
-}
-
-.section-title{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items:start ;
-    justify-content: center;
-    gap: 1rem;
-}
-.section-title h3{
-    font-size: 2rem;
-    color: aqua;
-    font-weight: 700;
+.card h2 {
+  color: white;
+  font-size: 4rem;
+  writing-mode: vertical-lr;
+  transform: scaleX(-1) scaleY(-1);
 }
 
-.section-title button{
-    background-color: transparent;
-    border: solid 1px aqua;
-    border-radius: 999px;
-    padding: 0.5rem 1rem;
-    color: aqua;
-
-    font-size: 1rem;
-    font-family: "Poppins",sans-serif;
+.section-title {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+.section-title h3 {
+  font-size: 2rem;
+  color: aqua;
+  font-weight: 700;
 }
 
-.section-image{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1;
-    gap: 1rem;
-    padding-inline: 0.5rem;
-    padding-block: 0.5rem;
+.section-title button {
+  background-color: transparent;
+  border: solid 1px aqua;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  color: aqua;
+
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
 }
-.section-image .img1{
-    position: absolute;
-    width: 300px;
-    object-fit:contain;
-    object-position: center;
-    align-self: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
-    margin-top: -100px;
-    margin-left: 10px;
-    z-index: 2;
+
+.section-image {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1;
+  gap: 1rem;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
 }
-.section-image .img2{
-    position: absolute;
-    width: 400px;
-    object-fit:contain;
-    object-position: center;
-    align-self: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+.section-image .img1 {
+  position: absolute;
+  width: 300px;
+  object-fit: contain;
+  object-position: center;
+  align-self: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+  margin-top: -100px;
+  margin-left: 10px;
+  z-index: 2;
 }
-.section-image .img3{
-    position: absolute;
-    width: 300px;
-    object-fit:contain;
-    object-position: center;
-    align-self: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
-    margin-left: 350px;
-    margin-top: -40px;
-    z-index: 3;
+.section-image .img2 {
+  position: absolute;
+  width: 400px;
+  object-fit: contain;
+  object-position: center;
+  align-self: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
 }
-.section-image .img4{
-    position: absolute;
-    width: 250px;
-    object-fit:contain;
-    object-position: center;
-    align-self: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
-    margin-top: 350px;
-    margin-left: -120px;
-    z-index: 4;
+.section-image .img3 {
+  position: absolute;
+  width: 300px;
+  object-fit: contain;
+  object-position: center;
+  align-self: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+  margin-left: 350px;
+  margin-top: -40px;
+  z-index: 3;
+}
+.section-image .img4 {
+  position: absolute;
+  width: 250px;
+  object-fit: contain;
+  object-position: center;
+  align-self: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+  margin-top: 350px;
+  margin-left: -120px;
+  z-index: 4;
 }
 
 /* Galeri Halaman Utama */
-.section-image .galery{
-    width: 220px;
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
-    border-radius: 20px;
-    position: relative;
-    flex-grow: none;
-    flex-wrap: nowrap;
+.section-image .galery {
+  width: 220px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  position: relative;
+  flex-grow: none;
+  flex-wrap: nowrap;
 }
 
-.section-image .galery:hover{
-    display: flex;
-    width: 250px;
-    transform: scale(1.2);
-    z-index: 100;
+.section-image .galery:hover {
+  display: flex;
+  width: 250px;
+  transform: scale(1.2);
+  z-index: 100;
 }
 
-footer{
-    background-color: #000000;
-    box-shadow: 2px 0 0 0 rgba(255, 255, 255, 0.8);;
-    color: white;
-    text-align: center;
+/* shop */
+.shop {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.card-shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+}
+.card-shop img {
+  width: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+.shop .card-shop .shop-description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  gap: none;
+}
+
+.shop .card-shop .shop-description .title {
+  font-weight: 400;
+}
+
+.shop .card-shop .shop-description .price {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.disc {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.disc .disc-presentase {
+  background-color: red;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+.disc h3 {
+  text-decoration: line-through rgb(252, 37, 37);
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shop .card-shop button {
+  background-color: transparent;
+  border: solid 1px aqua;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  color: aqua;
+  width: 80%;
+
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background-color: #000000;
+  box-shadow: 2px 0 0 0 rgba(255, 255, 255, 0.8);
+  color: white;
+  text-align: center;
 }
