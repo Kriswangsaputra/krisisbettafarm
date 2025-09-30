@@ -58,7 +58,6 @@ header.header-container .navbar-container .nav-list ul li a:hover {
 header.header-container .navbar-container button {
   border-radius: 10px;
   border: 2px solid white;
-  /* padding: 0rem 1rem; */
   background-color: transparent;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -511,5 +510,16 @@ footer {
 
 /* responsif */
 @media screen and (max-width: 768px) {
-  
+  .navbar-container {
+    flex-direction: column;
+    max-width: 750px;
+    left: 0;
+  }
+  .section-image .img1, .img3, .img4 {
+    display: none;
+  }
+
+  .section-image .img2 {
+    max-width: 100%;
+  }
 }
