@@ -383,6 +383,60 @@ main {
   font-family: "Poppins", sans-serif;
 }
 
+.news {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-news {
+  display: flex;
+  border: 2px solid white;
+  border-radius: 30px;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.main-description {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0 0 30px 30px;
+}
+
+.main-title {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.main-description p {
+  color: white;
+  font-size: 14px;
+}
+
+.news .main-news img {
+  width: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px;
+}
+
+.listing-news {
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-grid {
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+.listing-news .listing-grid img {
+  max-width: 300px;
+  border-radius: 30px;
+}
+
 footer {
   background-color: #000000;
   box-shadow: 2px 0 0 0 rgba(255, 255, 255, 0.8);
